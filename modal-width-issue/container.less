@@ -1,0 +1,103 @@
+@import (reference) "/apps/gd-commons/clientlibs/gd-core/css/breakpoint-variables";
+
+    .container.responsivegrid.cq-Editable-dom.cq-Editable-dom--container {
+        border-style: solid;
+        border-color: green;
+        border-width: 2px;
+    }
+    .container-edit-title {
+      text-align:center;
+    }
+
+
+    //Reverts the flow of image and text container
+    .revert-container{
+        .two-column-container{
+            >.aem-Grid{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .column-container-upper-gap{
+        margin-top: 40px;
+    }
+
+    .column-container-lower-gap{
+        margin-bottom: 40px;
+    }
+
+@media only screen and (min-width: @medium) {
+
+
+
+}
+
+@media only screen and (min-width: @large) {
+
+    .one-column-container{
+        .cmp-container{
+            max-width: 734px;
+        }
+    }
+
+    .two-column-container{
+        max-width: unset;
+
+        .cmp-container{
+            max-width: unset;
+        }
+
+        >.aem-Grid{
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .container{
+            max-width: 548px;
+        }
+
+    }
+
+    .three-column-container{
+        max-width: unset;
+
+        .cmp-container{
+            max-width: unset;
+        }
+
+        >.aem-Grid{
+            display: flex;
+            justify-content:center;
+        }
+
+        .container{
+            max-width: 360px;
+        }
+
+    }
+
+    .revert-container{
+        .two-column-container{
+            >.aem-Grid{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    //2 column image left and right variation
+    .image-left-right-variation{
+        .text{
+            margin-top: 7.5px;
+        }
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+.myDiv {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    transform-origin: center;
+    transform-origin: 50% 200px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    }

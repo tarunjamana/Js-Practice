@@ -1,0 +1,129 @@
+@import (reference) "/apps/gd-commons/clientlibs/gd-core/css/breakpoint-variables";
+
+.full-bleed-grid{
+      max-width: unset;
+      .two-column-container{
+          margin: 0 16px;
+
+          @media(min-width:@medium){
+              margin: 0 24px;
+          }
+
+          @media(min-width:@large){
+              margin: 0;
+          }
+          .container{
+            @media(min-width:@large){
+                margin-right: 16px;            
+            }
+        }
+        .container:last-child{
+            @media(min-width:@large){
+                margin-right: 0;
+            }
+        }
+    }
+
+    .three-column-container{
+        margin: 0 16px;
+
+        @media(min-width:@medium){
+            margin: 0 24px;
+        }
+
+        @media(min-width:@large){
+            margin: 0;
+        }
+        .container{
+            @media(min-width:@large){
+                margin-right: 16px;            
+            }
+        }
+        .container:last-child{
+            @media(min-width:@large){
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.grid-control-width{
+        max-width: 1112px;
+        margin: 0 auto;
+        float: none !important;
+        .two-column-container{
+            margin: 0 16px;
+  
+            @media(min-width:@medium){
+                margin: 0 24px;
+            }
+  
+            @media(min-width:@large){
+                margin: 0;
+            }
+            .container{
+              @media(min-width:@large){
+                  margin-right: 16px;            
+              }
+          }
+          .container:last-child{
+              @media(min-width:@large){
+                  margin-right: 0;
+              }
+          }
+      }
+  
+      .three-column-container{
+          margin: 0 16px;
+  
+          @media(min-width:@medium){
+              margin: 0 24px;
+          }
+  
+          @media(min-width:@large){
+              margin: 0;
+          }
+          .container{
+              @media(min-width:@large){
+                  margin-right: 16px;            
+              }
+          }
+          .container:last-child{
+              @media(min-width:@large){
+                  margin-right: 0;
+              }
+          }
+      }
+}
+
+
+.unequal-grids{
+    .one-column-container{
+        .cmp-container{
+            max-width: unset;
+        }
+    }
+    .two-column-container{
+        .container{
+            max-width: unset;
+        }
+    }
+
+    .three-column-container{
+        .container{
+            max-width: unset;
+        }
+    }
+}
+
+
+.two-column-fullbleed{
+    .cmp-container{
+
+        @media(min-width:@large){
+            max-width: 548px !important;
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}

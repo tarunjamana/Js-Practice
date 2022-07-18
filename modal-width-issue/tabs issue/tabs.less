@@ -1,0 +1,32 @@
+@import (reference) "/apps/gd-commons/clientlibs/gd-core/css/breakpoint-variables";
+@import (reference)  "/apps/gd-commons/clientlibs/gdcommon-global/less/typography";
+
+.cmp-tabs {
+    width: 100%;
+    max-width: 1112px;
+    margin: 0 auto;
+
+    &__tablist {
+        display: inline-flex;
+        padding: 4px;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    &__tab {
+        padding-bottom: 16px !important;
+        flex: 1;
+        text-align: center;
+        .gd-body-large;
+        margin-bottom: 0;
+
+        &--active {
+            color: var(--footer-heading);
+            border-bottom: 2px solid var(--footer-heading) !important;
+        }
+        &:hover,
+        &:focus{
+            outline: none;
+        }
+    }
+}
